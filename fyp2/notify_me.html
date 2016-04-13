@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="css/ionic.css">
+</head>
+<body>
+    <div class="bar bar-header bar-dark">
+      <a class="button button-clear" href="index.html">Logout</a>
+      <h1 class="title">Lesson Planner - Notification</h1>
+      <a class="button button-clear" href="menu.html">Menu</a>
+    </div>
+    <div style="padding:10px;margin-top:60px;">
+
+    <p>
+        Enter title and message for the reminder:
+        <input type="text" id="notify_title" placeholder="Title" />
+        <input type="text" id="notify_message" placeholder="Message" />
+        Enter date and time to trigger reminder:
+        <input type="date" id="notify_date" />
+        <input type="time" id="notify_time" />
+        <span  xaction="add_reminder">Add</span>
+    </p>
+    
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Objective</title>
+  <link rel="stylesheet" type="text/css" href="css/ionic.css">
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/geturi.js"></script>
+  <script type="text/javascript" src="js/create_objective.js"></script>
+
+</head>
+<body>
+<div class="bar bar-header bar-dark">
+  <a class="button button-clear" href="view_classroom.html">Back</a>
+
+  <h1 class="title">Create Objective</h1>
+
+  <a class="button button-clear" href="menu.html">Menu</a>
+
+</div>
+<div style="padding:10px;margin-top:60px;">
+  <div class="list">
+    <label class="item item-select item-stacked-label">
+      <select name="weeks" style="padding-top: 6px;width: 100%;max-width: 65%;">
+        <option value="">Choose Your Weeks</option>
+        <option value="1">Week 1</option>
+        <option value="2">Week 2</option>
+        <option value="3">Week 3</option>
+        <option value="4">Week 4</option>
+        <option value="5">Week 5</option>
+        <option value="6">Week 6</option>
+        <option value="7">Week 7</option>
+        <option value="8">Week 8</option>
+        <option value="9">Week 9</option>
+        <option value="10">Week 10</option>
+        <option value="11">Week 11</option>
+        <option value="12">Week 12</option>
+        <option value="13">Week 13</option>
+        <option value="14">Week 14</option>
+        <option value="15">Week 15</option>
+        <option value="16">Week 16</option>
+      </select>
+    </label>
+
+    <div class="display_form_objective" style="display: none;">
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Topic</span>
+        <input type="text" id="topic" placeholder="Topic">
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Objective</span>
+        <input type="text" id="objective" placeholder="Objective">
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Duration</span>
+        <input type="text" id="duration" placeholder="Duration : 1-8">
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Activity</span>
+        <input type="text" id="activity" placeholder="Activity">
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Material</span>
+        <input type="text" id="material" placeholder="Material">
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Step</span>
+        <textarea id="step" placeholder="Step" rows="7" cols="2"></textarea>
+      </label>
+
+      <button xcreate="objective" class="button button-block brown-color">Create Objective</button>
+
+    </div>
+
+    <button xview="objective" class="button button-block brown-color">View Objective</button>
+
+  </div>
+</div>
+
+</body>
+</html>

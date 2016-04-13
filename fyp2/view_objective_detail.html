@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Planning</title>
+  <link rel="stylesheet" type="text/css" href="css/ionic.css">
+  <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/geturi.js"></script>
+  <script type="text/javascript" src="js/sweetalert-dev.js"></script>
+  <script type="text/javascript" src="js/view_objective_detail.js"></script>
+</head>
+<body>
+<div class="bar bar-header bar-dark">
+  <a class="button button-clear" href="view_objective.html">Back</a>
+  <h1 class="title">Planning</h1>
+  <a class="button button-clear" href="menu.html">Menu</a>
+</div>
+<div style="padding:10px;margin-top:60px;">
+
+  <div align="center">
+    <img src="images/loading.gif" id="loading" style="display: block;">
+  </div>
+
+  <div class="objective_detail list" >
+
+    <label class="item item-input item-stacked-label" style="border: none; padding: 0;">
+      <span xaction="delete" class="button button-icon" style="float: left; color: white; background: darkred; padding: 13px;">Delete</span>
+      <span xaction="edit" class="button button-icon" style="float: right; color: white; background: green; padding: 13px">Edit</span>
+    </label>
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Topic</span>
+      <input type="text" id="topic" readonly>
+    </label>
+
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Objective</span>
+      <input type="text" id="objective" readonly>
+    </label>
+
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Duration</span>
+      <input type="text" id="duration" readonly>
+    </label>
+
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Activity</span>
+      <input type="text" id="activity" readonly>
+    </label>
+
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Material</span>
+      <input type="text" id="material" readonly>
+    </label>
+
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Step</span>
+      <textarea id="step" rows="7" cols="2" readonly></textarea>
+    </label>
+
+  </div>
+</div>
+
+</body>
+</html>
