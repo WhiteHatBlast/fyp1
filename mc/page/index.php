@@ -53,7 +53,7 @@ include("../include/auth.php");
         </li>
       </ul>
     </li>
-    
+
       <?php
       if($_SESSION['session_roles'] == '03'){
       ?>
@@ -78,7 +78,15 @@ include("../include/auth.php");
 
     </div>
 
-    <?php include("include/user_file.php")?>
+    <?php
+
+    if($_SESSION['session_roles'] !== '03') {
+
+      include("include/user_file.php");
+
+    }
+
+    ?>
 
   </div>
 
