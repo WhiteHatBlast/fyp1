@@ -2,6 +2,6 @@
 
 if(!isset($_SESSION['userId'])){
 
-  header('location:../');
+  //header('location:../');
 
 }

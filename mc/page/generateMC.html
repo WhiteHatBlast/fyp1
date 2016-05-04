@@ -54,7 +54,10 @@
 
     <div class="col-sm-8">
 
-      <input type="text" class="input-sm form-control" name="currentDate" readonly=""
+      <input type="text"
+             data-fv-notempty="true"
+             data-fv-notempty-message="Sila Masukkan Batalion"
+             class="input-sm form-control" name="currentDate" readonly=""
              value="<?php echo date('d-m-Y'); ?>">
 
     </div>
@@ -71,7 +74,10 @@
 
     <div class="col-sm-8">
 
-      <input type="text" class="input-sm form-control" name="org_ref_no" value="">
+      <input type="text"
+             data-fv-notempty="true"
+             data-fv-notempty-message="Sila Masukkan No Tentera"
+             class="input-sm form-control" name="org_ref_no" value="">
 
     </div>
 
@@ -87,7 +93,10 @@
 
     <div class="col-sm-8">
 
-      <input type="text" class="input-sm form-control" name="designation" value="">
+      <input type="text"
+             data-fv-notempty="true"
+             data-fv-notempty-message="Sila Masukkan Pangkat"
+             class="input-sm form-control" name="designation" value="">
 
     </div>
 
@@ -103,7 +112,10 @@
 
     <div class="col-sm-8">
 
-      <input type="text" class="input-sm form-control" name="name" value="">
+      <input type="text"
+             data-fv-notempty="true"
+             data-fv-notempty-message="Sila Masukkan Nama"
+             class="input-sm form-control" name="name" value="">
 
     </div>
 
@@ -119,7 +131,10 @@
 
     <div class="col-sm-8">
 
-      <input type="text" class="input-sm form-control" name="diagnosa" value="">
+      <input type="text"
+             data-fv-notempty="true"
+             data-fv-notempty-message="Sila Masukkan Diagnosa"
+             class="input-sm form-control" name="diagnosa" value="">
 
     </div>
 
@@ -137,7 +152,10 @@
 
       <input type="hidden" name="hashkeyQRCode" value="<?php echo $generateKeyQrCode; ?>">
       <input type="hidden" name="ip_address" value="">
-      <textarea class="form-control" placeholder="CATATAN DAN ULASAN PEGAWAI PERUBATAN"></textarea>
+      <textarea class="form-control"
+                data-fv-notempty="true"
+                data-fv-notempty-message="Sila Masukkan Maklumat"
+                name="description" placeholder="CATATAN DAN ULASAN PEGAWAI PERUBATAN"></textarea>
 
     </div>
 
@@ -147,7 +165,7 @@
     <div class="col-sm-2"></div>
 
     <div class="col-sm-8">
-      <button class="btn btn-sm btn-primary pull-right" type="submit">Generate</button>
+      <button class="btn btn-sm btn-primary pull-right" disabled type="submit">Generate</button>
     </div>
 
   </div>

@@ -38,11 +38,11 @@
       function (data) {
 
         $('[name="organization"]').val(data.organization);
-        $('[name="designation"]').val(data.organization);
-        $('[name="org_ref_no"]').val(data.organization);
-        $('[name="name"]').val(data.organization);
-        $('[name="currentDate"]').val(data.organization);
-        $('[name="diagnosa"]').val(data.organization);
+        $('[name="designation"]').val(data.designation);
+        $('[name="org_ref_no"]').val(data.org_ref_no);
+        $('[name="name"]').val(data.name);
+        $('[name="currentDate"]').val(data.currentDate);
+        $('[name="diagnosa"]').val(data.diagnosa);
 
         $('.img_qrCode').attr("src", "../../file/" + data.qrHashKey + ".png")
 

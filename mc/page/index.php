@@ -16,6 +16,7 @@ include("../include/auth.php");
 
     <!-- FormValidation CSS file -->
     <link rel="stylesheet" href="../css/formValidation.min.css">
+    <link rel="stylesheet" href="../css/sweetalert.css">
 
     <!-- jQuery v1.9.1 or higher -->
     <script type="text/javascript" src="../js/jquery.min.js"></script>
@@ -26,6 +27,7 @@ include("../include/auth.php");
     <!-- FormValidation plugin and the class supports validating Bootstrap form -->
     <script src="../js/formValidation.min.js"></script>
     <script src="../js/validation.bootstrap.min.js"></script>
+    <script src="../js/sweetalert.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/generateMC.js"></script>
@@ -60,6 +62,9 @@ include("../include/auth.php");
         <li role="presentation" class="active">
           <a href="#generateMC" aria-controls="generateMC" role="tab" data-toggle="tab">Generate MC</a>
         </li>
+        <li role="presentation">
+          <a href="#file_generated" aria-controls="file_generated" role="tab" data-toggle="tab">Senarai Laporan</a>
+        </li>
 
       <?php } ?>
 
@@ -78,19 +83,19 @@ include("../include/auth.php");
 
     </div>
 
-    <?php
+    <div role="tabpanel" class="tab-pane" id="file_generated">
 
-    if($_SESSION['session_roles'] !== '03') {
+      <?php include("include/user_file.php"); ?>
 
-      include("include/user_file.php");
-
-    }
-
-    ?>
+    </div>
 
   </div>
 
-  <?php } ?>
+    <br/>
+
+  <?php }
+
+  ?>
 
   </body>
 </html>
